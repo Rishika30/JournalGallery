@@ -1,9 +1,9 @@
 # JournalGallery
 
 App to create and publish journal stories by users. It uses Google OAuth for authentication and Nodejs, ExpressJs, MongoDB on the backend
-br
-br
-br
+
+
+
 
 
 # npm i
