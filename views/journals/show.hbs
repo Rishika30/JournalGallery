@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="col s12 m8">
+        <h3>{{journal.title}}
+            <small>{{{editIcon journal.user user journal._id false}}}</small>
+        </h3>
+        <div class="card story">
+            <div class="card-content">
+                <span class="card-title">{{formatDate date 'MMMM Do YYYY, h:mm:ss a'}}</span>
+                {{{journal.body}}}
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m4">
+        <div class="card center-align">
+            <div class="card-content">
+                <span class="card-title">{{journal.user.displayName}}</span>
+                <img src="{{journal.user.image}}" class="circle responsive-img img-small">
+            </div>
+            <div class="card-action">
+                <a href="/journals/user/{{journal.user._id}}">More From {{journal.user.firstName}}</a>
+            </div>
+        </div>
+    </div>
+</div>
